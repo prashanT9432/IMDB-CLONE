@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDb: Ratings, Reviews, and Where to Watch the Best Movies & TV Shows</title>
+    <!-- add fevicon to the homepage -->
+    <link rel="icon" href="https://m.media-amazon.com/images/G/01/imdb/images/social/imdb_logo.png">
+    <!-- font awsome link to add icon -->
+    <script src="https://kit.fontawesome.com/301907f500.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body class="body">
+    <div id="mySidebar" class="sidebar">
+        <a class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark fa-2xl"
+                style="color: #dabd00"></i></a>
+                <span id="clearlocal">
+                    <p id="clear">Remove favourite </p>
+                </span>
+                <div id="fav-movies-container">
+
+                </div>
+    </div>
+
+    <div class="nav-bar">
+        <img id="imdb-logo" onclick="window.location.reload()" src="./files/IMDB_Logo_2016.svg.png">
+        <button class="button"><i class="fa-solid fa-bars" style="color: #ffffff;"></i>Menu</button>
+        <form id="from" autocomplete="off">
+            <div class="input-div">
+                <input id="search-bar" type="text" name="movie" placeholder="Search IMDb">
+                <i id="search-icon" class="fa-solid fa-magnifying-glass" style="color: #727272;"></i>
+            </div>
+        </form>
+        <span>
+            <i id="fav1" class="fa-solid fa-heart" style="color: #ffffff;"></i>
+            <button class="button openbtn" onclick="openNav()">Favourite</button>
+        </span>
+        <button class="button">Sign In</button>
+        <span id="lang">
+            <label for="language">EN</label>
+            <select id="language">
+                <option>English(united states)</option>
+            </select>
+        </span>
+    </div>
+
+    <ul class="list"></ul>
+    <div class="movie-area">
+        
+<div id="home">
+    <h2>| Featured today</h2>
+    <span id="recomendation">
+        <div class="card">
+            <img src="./files/interstellar.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>interstellar <i class="fa-solid fa-star" style="color: #FFD43B;"></i> 7.9</b></h4>
+                <a href="https://youtu.be/zSWdZVtXT7E?feature=shared" class="trailer">Watch trailer</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./files/oppenheimer.jpeg" alt="Avatar" style="width:106%;">
+            <div class="container">
+                <h4><b>Oppenheimer <i class="fa-solid fa-star" style="color: #FFD43B;"></i> 8.9</b></h4>
+                <a href="https://youtu.be/uYPbbksJxIg?feature=shared" class="trailer">Watch trailer</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./files/dark.jpg" alt="Avatar" style="width:96%; margin-left:18px">
+            <div class="container">
+                <h4><b>Dark Knight <i class="fa-solid fa-star" style="color: #FFD43B;"></i> 8.7</b></h4>
+                <a href="https://youtu.be/EXeTwQWrcwY?feature=shared" class="trailer">Watch trailer</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./files/godf.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>God Father <i class="fa-solid fa-star" style="color: #FFD43B;"></i> 9.3</b></h4>
+                <a href="https://youtu.be/UaVTIH8mujA?feature=shared" class="trailer">Watch trailer</a>
+            </div>
+        </div>
+    </span>
+    </div>
+    <div id="result" style="display: none;">
+        <h2>| Search result</h2>
+        <span id="searchResult">
+        <div class="resultCard">
+            <img id="img" src="" alt="Avatar" style="width:30%">
+            <div class="container2">
+                <span class="info">
+                <h1 id="mtitle"></h1> 
+                <i id="Ratings" class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <p id="genre"></p>
+                <p id="mlanguage"></p>
+                <p id="plot"></p>
+                <p id="cast"></p>
+                <p id="boxoffice"></p>
+                <p id="writer"></p>
+                <p id="director"></p>
+                <p id="released"></p>
+            </span >
+                <a href="https://youtu.be/zSWdZVtXT7E?feature=shared" class="trailer">Watch-trailer</a>
+                <div>
+                    <button id="fav2" class="trailer">Add to favourite </button>
+                </div>
+            </div>
+        </div>
+    </span>
+</div>
+</div>
+
+    <footer id="footer">© 1990-2024 by IMDb.com, Inc.</footer>
+    <!-- link javaScript -->
+    <script src="home.js"></script>
+</body>
+
+</html>
